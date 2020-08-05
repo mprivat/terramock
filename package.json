@@ -1,0 +1,29 @@
+{
+	"name": "terramock",
+	"version": "1.0.0",
+	"description": "Recursively copies terraform configs while optionally scrubbing with mocks",
+	"main": "terramock.js",
+	"scripts": {
+		"test": "jest",
+		"grammar": "nearleyc hcl_grammar.ne -o hcl_grammar.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mprivat/terramock.git"
+	},
+	"keywords": [ "Terraform", "testing", "mocks" ],
+	"author": "Michael Privat",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mprivat/terramock/issues"
+	},
+	"homepage": "https://github.com/mprivat/terramock#readme",
+	"devDependencies": {
+		"nearley": "^2.19.5",
+		"jest": "^24.9.0"
+	},
+	"dependencies": {
+		"fs": "0.0.1-security",
+		"path": "^0.12.7"
+	}
+}
