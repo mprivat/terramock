@@ -58,8 +58,6 @@ test('I can parse and reconstruct HCL files', async () => {
 	// Check that the parsing was not ambiguous
 	expect(results.length).toBe(1);
 
-	console.log(JSON.stringify(results[0], null, 2));
-
 	const reconstructed = hclParser.toHCL(results[0]);
 
 	expect(reconstructed).toBe(content);
